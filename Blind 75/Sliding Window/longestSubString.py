@@ -13,7 +13,7 @@ class Solution:
             cur+=1
             r+=1
             maxString = max(cur,maxString)
-
+s
         return maxString
 
 solution = Solution()
