@@ -14,6 +14,6 @@ class Solution:
         return True
 
         #Another way can be to sort each word and compare them
-
+        #Test
 solution = Solution()
 print(solution.isAnagram("anagram","nagaram"))
