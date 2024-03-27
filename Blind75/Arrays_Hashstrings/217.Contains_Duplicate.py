@@ -9,6 +9,6 @@ class Solution:
             hashset.add(i)
 
         return False
-
+#test
 solution = Solution()
 print(solution.containsDuplicate([1, 2, 3]))
