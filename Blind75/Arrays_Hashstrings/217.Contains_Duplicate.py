@@ -1,14 +1,12 @@
-class Solution:
-    def containsDuplicate(self, nums: list[int]) -> bool:
-        print("List")
-        hashset = set()
-
+class solution:
+    def containsDuplicate(self, nums: list[int]) ->bool:
+        setVar = set()
         for i in nums:
-            if i in hashset:
+            if i in setVar:
                 return True
-            hashset.add(i)
-
+            else:
+                setVar.add(i)
         return False
-#test
-solution = Solution()
+    
+solution = solution()
 print(solution.containsDuplicate([1, 2, 3]))
