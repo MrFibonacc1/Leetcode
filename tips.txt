@@ -1,0 +1,5 @@
+
+Key points:
+
+
+Used dictionary to store head of each array, or key value (important concept) - Good for things like anagrams and 2d arrays
