@@ -16,3 +16,4 @@ class Solution:
 
 solution = Solution()
 print(solution.groupAnagram([""]))
+
