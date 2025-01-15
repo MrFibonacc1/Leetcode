@@ -6,10 +6,8 @@ class Solution:
         for i in range(n):
             result[i] = preRun
             preRun *= nums[i]
-        print(result)
         postRun = 1
         for i in range(n-1,-1,-1):
-            print(i)
             result[i]*=postRun
             postRun*=nums[i]
         return result
