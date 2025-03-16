@@ -1,3 +1,5 @@
+#Finished in 5 min
+
 class Solution:
     def search(self, nums:list[int], target:int)->int:
         startIndex = 0
