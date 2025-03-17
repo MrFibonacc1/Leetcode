@@ -1,17 +1,18 @@
 class Solution:
     def isValid(self, s:str) -> bool:
+        sym = ("(", "[", "{")
         stack = []
-        coll = {"(", "{", "["}
         for i in range(len(s)):
-            if s[i] in coll:
-                stack.append(s[i])
+            char = s[i]
+            if len(stack) == 0 or char in sym:
+                stack.append(char)
                 continue
-            if len(stack) == 0:
+            elif (char == "]" and stack[-1] == "[") or (char == "}" and stack[-1] == "{") or (char == ")" and stack[-1] == "("):
+                stack.pop()
+            else: 
                 return False
-            char = stack.pop()
-            if not ((s[i] == ")" and char == "(") or (s[i] == "}" and char == "{") or (s[i] == "]" and char == "[")):
-                return False
+            
         return len(stack) == 0
 
 Solution = Solution()
-print(Solution.isValid("([])"))
+print(Solution.isValid("(])"))
