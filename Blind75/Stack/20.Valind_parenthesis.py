@@ -7,12 +7,10 @@ class Solution:
             if len(stack) == 0 or char in sym:
                 stack.append(char)
                 continue
-            elif (char == "]" and stack[-1] == "[") or (char == "}" and stack[-1] == "{") or (char == ")" and stack[-1] == "("):
-                stack.pop()
-            else: 
+            removed = stack.pop()
+            if not ((removed == "(" and char == ")") or (removed == "[" and char == "]") or (removed == "{" and char == "}")):
                 return False
-            
         return len(stack) == 0
 
 Solution = Solution()
-print(Solution.isValid("(])"))
+print(Solution.isValid("()[]{}"))
