@@ -10,3 +10,8 @@ Either start in the middle and split in half or find the start
 Can make 125 cleaner
 
 use process of elimation and dont wait for a concrete answer, have faith (q11)
+
+
+Linked List:
+
+Can create dummy node reference to start. Initilize like result = ListNode(-1); curr = result;
