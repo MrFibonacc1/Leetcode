@@ -7,6 +7,14 @@ Used dictionary to store head of each array, or key value (important concept) - 
 Know how sets work, problem 128 is good.
 Either start in the middle and split in half or find the start
 
+for val in dict.values():
+    returnVal.append(val) 
+
+dict.values returns all the values in arrays (each key is its own array, key not included)
+
+for strings ask about capitalization, and characters and symbols
+
+
 Can make 125 cleaner
 
 use process of elimation and dont wait for a concrete answer, have faith (q11)
